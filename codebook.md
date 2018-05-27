@@ -10,7 +10,8 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 Study website:	http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
 Original data:	https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 Explanation of data maniplations (study design):
-1.	Read into R the following text files from the UCI HAR Datasets
+1.	Download and unzip the original dataset zip file (link shown above) to your working directory
+2. Read into R the following text files from the UCI HAR Dataset
 a.	features.txt
 b.	activity_labels.txt
 c.	subject_train.txt
@@ -19,7 +20,7 @@ e.	y_train.txt
 f.	subject_test.txt
 g.	X_test.txt
 h.	y_test.txt
-2.	Specify where to save the final txt output from the data manipulation process
+2.	Specify to save the final txt output from the data manipulation process to your working directory
 3.	Get rid of the unreadable characters in the features.txt vector so we can later use this for the variable names of the final dataset.  The unreadable characters are the following: -   ,   (   )
 4.	Tidy the x_test dataset by doing the following, resulting in a tidy dataset called test_set 
 a.	Rename the columns using the feature names which have had the unreadable character removed or replace
@@ -32,7 +33,8 @@ d.	Apply the descriptive name of the activity in each observation by matching th
 8.	Melt the short_set into a new dataset, means, where columns “subject” and “activity” are the id columns and all other columns are the measurement colums.
 9.	Use dcast to convert the dataset into one measuring the average of each activity and each subject for each feature measurement, name the dataset “means”
 10.	Sort the “means” dataset by activity and subject
-11.	Write the means dataset to the file path specified in step 2
+11.	Write the means dataset to the file path specified in step 2, in your working directory
+12. Print a comment saying the script is done and where to find the final tidy output file
 12.	The resulting dataset is tidy because:	
 a.	Each variable measured is in one column
 b.	Each different observation is in a different row
