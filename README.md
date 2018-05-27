@@ -2,6 +2,7 @@
 Final project for the Coursera Getting and Cleaning Data course.
 
 #####################################################################
+
 This project uses original datasets from the following publication: 
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
@@ -18,6 +19,7 @@ Study website:	http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition
 Original data:	https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 ######################################################################
+
 Data is processed from the original dataset into a final tidy dataset using the run_analysis.R script included in this repository. 
 
 A description of the steps taken in the script to process the data is included in the codebook.md file and at the end of this README file.
