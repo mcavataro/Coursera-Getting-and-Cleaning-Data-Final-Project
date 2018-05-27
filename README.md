@@ -12,7 +12,7 @@ This dataset is distributed AS-IS and no responsibility implied or explicit can 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 ######################################################################
 
-The links to the study website and original data are included in the codebook.md file included in this repository and below:
+The links to the study website and original data are included in the codebook.md file included in this repository and also below:
 
 Study website:	http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
 
@@ -24,7 +24,7 @@ Data is processed from the original dataset into a final tidy dataset using the 
 
 A description of the steps taken in the script to process the data is included in the codebook.md file and at the end of this README file.
 
-A description of the dataset variables is included in the codebook.md file. 
+A description of each dataset variable is included in the codebook.md file. 
 
 This submission successfully meets the requirements of the project because it meets the objectives and review criteria below:
 
