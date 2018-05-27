@@ -1,22 +1,25 @@
-# Load the reshape package
+#Load the reshape2 package
 
   library(reshape2)
-
-#Download txt files from the original dataset (the link to download this dataset is included in both the Codebook and README files)
   
-  #Specify the file paths to read from and to write final output to
-  path.features <- "C:/Users/Matt/OneDrive/Education/Coursera - Getting & Cleaning Data/Week4/UCI HAR Dataset/features.txt"
-  path.activity_labels <- "C:/Users/Matt/OneDrive/Education/Coursera - Getting & Cleaning Data/Week4/UCI HAR Dataset/activity_labels.txt"
+#Download the original dataset to your working directory
+  url.zip <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+  download.file(url.zip,"UCI HAR Dataset.zip") 
+  unzip(zipfile = "./UCI HAR Dataset.zip")  #unzip it
   
-  path.subject_train <- "C:/Users/Matt/OneDrive/Education/Coursera - Getting & Cleaning Data/Week4/UCI HAR Dataset/train/subject_train.txt"
-  path.x_train <- "C:/Users/Matt/OneDrive/Education/Coursera - Getting & Cleaning Data/Week4/UCI HAR Dataset/train/X_train.txt"
-  path.y_train <- "C:/Users/Matt/OneDrive/Education/Coursera - Getting & Cleaning Data/Week4/UCI HAR Dataset/train/y_train.txt"
+  #Specify the file paths you'll need to read the data from and to write the final output to
+  path.features <- "./UCI HAR Dataset/features.txt"
+  path.activity_labels <- "./UCI HAR Dataset/activity_labels.txt"
   
-  path.subject_test <- "C:/Users/Matt/OneDrive/Education/Coursera - Getting & Cleaning Data/Week4/UCI HAR Dataset/test/subject_test.txt"
-  path.x_test <- "C:/Users/Matt/OneDrive/Education/Coursera - Getting & Cleaning Data/Week4/UCI HAR Dataset/test/X_test.txt"
-  path.y_test <- "C:/Users/Matt/OneDrive/Education/Coursera - Getting & Cleaning Data/Week4/UCI HAR Dataset/test/y_test.txt"
+  path.subject_train <- "./UCI HAR Dataset/train/subject_train.txt"
+  path.x_train <- "./UCI HAR Dataset/train/X_train.txt"
+  path.y_train <- "./UCI HAR Dataset/train/y_train.txt"
   
-  path.write <- "C:/Users/Matt/OneDrive/Education/Coursera - Getting & Cleaning Data/Week4/final_project_tidy_output.txt"
+  path.subject_test <- "./UCI HAR Dataset/test/subject_test.txt"
+  path.x_test <- "./UCI HAR Dataset/test/X_test.txt"
+  path.y_test <- "./UCI HAR Dataset/test/y_test.txt"
+  
+  path.write <- "./final_project_tidy_output.txt"
   
   #Read in the data files
   features <- read.table(path.features,header = FALSE)
@@ -30,7 +33,7 @@
   x_test <- read.table(path.x_test,header = FALSE)
   y_test <- read.table(path.y_test,header = FALSE)
   
-# Get rid of unreadable characters in features vector
+# Get rid of unreadable characters in the features V2 vector
   features_txt <- gsub(",","_",gsub("-","_",gsub("\\(|\\)","",features$V2)))
 
 #Prep test data set
