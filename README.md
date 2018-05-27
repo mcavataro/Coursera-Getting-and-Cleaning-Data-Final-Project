@@ -31,8 +31,8 @@ This submission successfully meets the requirements of the project because it me
 Objectives:
 
 1. It merges the training and test sets into one dataset
-2. It extracts only the measuremetns on the mean and standard veiations for each measurement
-3. It uses descriptive activity names to name the activities inthe dataset
+2. It extracts only the measurements on the mean and standard veiations for each measurement
+3. It uses descriptive activity names to name the activities in the dataset
 4. It appropriately labels the dataset with descriptive variable names
 5. From the dataset in step 4, it creates a new, independent tidy data set with the average of each activity and each subject
 
