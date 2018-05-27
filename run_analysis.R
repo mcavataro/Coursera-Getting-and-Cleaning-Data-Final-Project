@@ -16,7 +16,7 @@
   path.x_test <- "C:/Users/Matt/OneDrive/Education/Coursera - Getting & Cleaning Data/Week4/UCI HAR Dataset/test/X_test.txt"
   path.y_test <- "C:/Users/Matt/OneDrive/Education/Coursera - Getting & Cleaning Data/Week4/UCI HAR Dataset/test/y_test.txt"
   
-  path.write <- "C:/Users/Matt/OneDrive/Education/Coursera - Getting & Cleaning Data/Week4/final_project_output.txt"
+  path.write <- "C:/Users/Matt/OneDrive/Education/Coursera - Getting & Cleaning Data/Week4/final_project_tidy_output.txt"
   
   #Read in the data
   features <- read.table(path.features,header = FALSE)
